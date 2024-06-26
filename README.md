@@ -9,7 +9,7 @@
 
 <h2>Technology Stack</h2>
 
-[![My Skills](https://skillicons.dev/icons?i=python,js,nodejs)](https://skillicons.dev)[![My Skills](https://skillicons.dev/icons?i=firebase)](https://skillicons.dev)<br>
+[![My Skills](https://skillicons.dev/icons?i=html,css,python,js,nodejs)](https://skillicons.dev)[![My Skills](https://skillicons.dev/icons?i=firebase)](https://skillicons.dev)<br>
 
 ## Installation
 1. Install the NodeJS LTS (v20.14.0) [Click Here](https://nodejs.org/en/download/package-manager)
