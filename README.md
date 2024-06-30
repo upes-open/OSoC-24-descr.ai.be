@@ -27,7 +27,7 @@
 1. Create a fork on the repository
 2. Clone the forked repository 
     ```zsh
-    git clone https://github.com/upes-open/OSoC24-Bookmark-Context-AI
+    git clone https://github.com/upes-open/OSoC24-descr.ai.be
     ```
 3. Open the cloned repository in your desired code editor (eg: VS Code, Zed, Sublime Text)
 
