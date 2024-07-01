@@ -1,4 +1,4 @@
-```markdown
+
 # Firebase Authentication Project
 
 This project demonstrates how to set up Firebase Authentication with email/password and Google sign-in using JavaScript. It includes user sign-in, sign-up, and session management, as well as storing user-specific data in Firestore.
