@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Fredoka One', cursive;
+}
+
+body {
+  background-color: rgb(55, 154, 187);
+}
+
+h1 {
+  margin-bottom: 8%;
+  text-align: center;
+  color: #2087c7;
+  letter-spacing: 0.1em;
+  font-size: 2.5em;
+}
+
+p {
+  margin-top: 5%;
+  margin-bottom: 5%;
+  width: 100%;
+  text-align: center;
+  border-bottom: 1px solid #000;
+  line-height: 0.1em;
+}
+
+p span {
+  background: #fff;
+  padding: 0 10px;
+}
+
+input {
+  margin-bottom: 3%;
+  padding: 1em;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: calc(100%);
+}
+
+input:last-of-type {
+  margin-bottom: 0;
+}
+
+input:focus {
+  outline: none;
+  border-color: #54bdff;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+button {
+  padding: 1em;
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button#submit, button#create-acct-btn, button#google-sign-in {
+  background-color: #54bdff;
+  color: white;
+  margin-top: 5%;
+}
+
+button#submit:hover, button#create-acct-btn:hover, button#google-sign-in:hover {
+  background-color: #0583D2;
+}
+
+button#sign-up {
+  background-color: transparent;
+  color: #0583D2;
+  border: none;
+  margin-top: 10%;
+}
+
+button#sign-up:hover {
+  text-decoration: underline;
+}
+
+.login-container {
+  background-color: white;
+  padding: 5%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  width: 40vw;
+  max-width: 400px;
+  margin: 15vh auto;
+  border-radius: 10px;
+}
+
+#create-acct {
+  display: none;
+}
+
+#return-btn {
+  color: grey;
+  text-decoration: underline;
+  border: none;
+  margin-top: 3%;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+#return-btn:hover {
+  color: #0583D2;
+}
