@@ -26,13 +26,13 @@
         </div>
         <div class="bookmarks" id="bookmarksContainer">
             <div class="card">
-                <h2>Bookmark 1</h2>
-                <p>This is a description of bookmark 1.</p>
+                <h2>Clothes</h2>
+                <p>This is a description of clothes.</p>
                 <a href="#">Visit</a>
             </div>
             <div class="card">
-                <h2>Bookmark 2</h2>
-                <p>This is a description of bookmark 2.</p>
+                <h2>Football</h2>
+                <p>This is a description of football items.</p>
                 <a href="#">Visit</a>
             </div>
             <div class="card">
@@ -45,45 +45,43 @@
                 <p>This is a description of bookmark 4.</p>
                 <a href="#">Visit</a>
             </div>
-          
+            <!-- Add more cards as needed -->
         </div>
     </div>
-    <script src="script.js">
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const searchInput = document.getElementById('searchInput');
+            const sortSelect = document.getElementById('sortSelect');
+            const bookmarksContainer = document.getElementById('bookmarksContainer');
+            const cards = Array.from(bookmarksContainer.getElementsByClassName('card'));
 
-document.addEventListener('DOMContentLoaded', () => {
-    const searchInput = document.getElementById('searchInput');
-    const sortSelect = document.getElementById('sortSelect');
-    const bookmarksContainer = document.getElementById('bookmarksContainer');
-    const cards = Array.from(bookmarksContainer.getElementsByClassName('card'));
+            searchInput.addEventListener('input', () => {
+                const query = searchInput.value.toLowerCase();
+                cards.forEach(card => {
+                    const title = card.getElementsByTagName('h2')[0].textContent.toLowerCase();
+                    if (title.includes(query)) {
+                        card.style.display = '';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+            });
 
-    searchInput.addEventListener('input', () => {
-        const query = searchInput.value.toLowerCase();
-        cards.forEach(card => {
-            const title = card.getElementsByTagName('h2')[0].textContent.toLowerCase();
-            if (title.includes(query)) {
-                card.style.display = '';
-            } else {
-                card.style.display = 'none';
-            }
+            sortSelect.addEventListener('change', () => {
+                const sortValue = sortSelect.value;
+                const sortedCards = cards.sort((a, b) => {
+                    const titleA = a.getElementsByTagName('h2')[0].textContent.toLowerCase();
+                    const titleB = b.getElementsByTagName('h2')[0].textContent.toLowerCase();
+                    if (sortValue === 'name-asc') {
+                        return titleA.localeCompare(titleB);
+                    } else if (sortValue === 'name-desc') {
+                        return titleB.localeCompare(titleA);
+                    }
+                });
+                bookmarksContainer.innerHTML = '';
+                sortedCards.forEach(card => bookmarksContainer.appendChild(card));
+            });
         });
-    });
-
-    sortSelect.addEventListener('change', () => {
-        const sortValue = sortSelect.value;
-        const sortedCards = cards.sort((a, b) => {
-            const titleA = a.getElementsByTagName('h2')[0].textContent.toLowerCase();
-            const titleB = b.getElementsByTagName('h2')[0].textContent.toLowerCase();
-            if (sortValue === 'name-asc') {
-                return titleA.localeCompare(titleB);
-            } else if (sortValue === 'name-desc') {
-                return titleB.localeCompare(titleA);
-            }
-        });
-        bookmarksContainer.innerHTML = '';
-        sortedCards.forEach(card => bookmarksContainer.appendChild(card));
-    });
-});
-
     </script>
 </body>
 </html>
