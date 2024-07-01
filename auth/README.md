@@ -3,9 +3,6 @@
 
 This project demonstrates how to set up Firebase Authentication with email/password and Google sign-in using JavaScript. It includes user sign-in, sign-up, and session management, as well as storing user-specific data in Firestore.
 
-## Introduction
-
-This project provides a simple interface for users to sign in, sign up, and manage their sessions using Firebase Authentication. It also includes a feature to sign in using Google. User-specific data is stored in Firestore.
 
 ## Dependencies
 
