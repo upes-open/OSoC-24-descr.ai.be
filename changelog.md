@@ -1,5 +1,5 @@
-- Date `commit_id` [committer's username](committer's github url)
+- Mon Jul 1 14:12:10 2024 +0530 `b7b557ef7d931184aa691d4eb86fe34748311391` [sakshammaggu](https://github.com/sakshammaggu)
 
-  - Feat: <for features>
-  - Fixes: <for bug fixes>
-  - Update: <for any update in the code>
+  - Feat: Initialized the new node.js project
+  - Update: Set up webpack for bundling
+  - Update: Initialized the manifest.json file for Chrome extension

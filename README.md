@@ -5,7 +5,20 @@
 
 </div>
 
-> Project Description
+# Project Description
+
+Overview
+The Bookmark Context AI Chrome Extension revolutionizes the way users manage and utilize their bookmarks by adding intelligent context-aware features. This extension enhances the traditional bookmarking experience by providing users with dynamic summaries, keywords, and notes for each bookmark. When a user hovers over a bookmark, the extension displays this contextual information in a tooltip, making it easier to recall and utilize saved resources effectively.
+
+## Key Features
+1. Contextual Bookmarks: Save and categorize bookmarks with AI-generated summaries, keywords, and notes.
+2. Hover Tooltips: Display contextual information in tooltips when hovering over bookmarks.
+3. Enhanced Bookmarking: Bookmark specific paragraphs, images, or elements on a webpage.
+4. Bookmarks Management: Access, search, and sort all bookmarks through an easy-to-use interface.
+5. User Authentication: Securely manage bookmarks with user authentication through Google accounts.
+6. Custom AI Models: Integrate custom AI models for generating summaries and tags.
+
+
 
 <h2>Technology Stack</h2>
 
