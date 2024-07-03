@@ -156,3 +156,4 @@ function saveAuthDetailsLocally(action, email, password) {
   a.click();
   URL.revokeObjectURL(url);
 }
+
