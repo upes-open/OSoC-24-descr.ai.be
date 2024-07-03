@@ -56,11 +56,11 @@ This JavaScript file handles Firebase initialization, authentication (email/pass
 
 ### Sign In Page
 
-![Sign In Page](image.png)
+![Sign In Page](image-2.png)
 
 ### Sign Up Page
 
-![Sign Up Page](image-1.png)
+![Sign Up Page](image-3.png)
 
 ## Features
 

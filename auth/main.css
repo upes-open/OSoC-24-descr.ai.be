@@ -4,41 +4,55 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: 'Fredoka One', cursive;
+  font-family: 'Montserrat', sans-serif;
 }
+/*font-family: 'Montserrat', sans-serif;
+font-family: 'Raleway', sans-serif;
+font-family: 'Lora', serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Playfair Display', serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Bebas Neue', sans-serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Oswald', sans-serif;
+font-family: 'Lobster', cursive;
+*/
 
 body {
-  background-color: rgb(55, 154, 187);
-}
+  background-color: rgb(11, 4, 21);
+  }
 
 h1 {
-  margin-bottom: 8%;
+  margin-bottom: 15%;
   text-align: center;
-  color: #2087c7;
+  color: rgb(173, 162, 255); /* Light purple-blue */
   letter-spacing: 0.1em;
   font-size: 2.5em;
 }
 
 p {
-  margin-top: 5%;
-  margin-bottom: 5%;
+  margin-top: 10%;
+  margin-bottom: 10%;
   width: 100%;
   text-align: center;
-  border-bottom: 1px solid #000;
+  border-bottom: 1px solid #555; /* Lightened for better contrast */
   line-height: 0.1em;
 }
 
 p span {
-  background: #fff;
+  background: #1e1e1e; /* Dark background for contrast */
+  color: #fefefe;
   padding: 0 10px;
 }
 
 input {
   margin-bottom: 3%;
   padding: 1em;
-  border: 1px solid #ccc;
+  border: 1px solid #555; /* Darkened border */
   border-radius: 5px;
   width: calc(100%);
+  background-color: #2a2a2a; /* Dark input background */
+  color: #fefefe;
 }
 
 input:last-of-type {
@@ -47,8 +61,8 @@ input:last-of-type {
 
 input:focus {
   outline: none;
-  border-color: #54bdff;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  border-color: #a78bfa; /* Purple-blue focus */
+  box-shadow: 0 0 5px rgba(167, 139, 250, 0.3); /* Purple-blue shadow */
 }
 
 button {
@@ -61,34 +75,35 @@ button {
 }
 
 button#submit, button#create-acct-btn, button#google-sign-in {
-  background-color: #54bdff;
+  background-color: rgb(102, 51, 153); /* Purple-blue */
   color: white;
   margin-top: 5%;
 }
 
 button#submit:hover, button#create-acct-btn:hover, button#google-sign-in:hover {
-  background-color: #0583D2;
+  background-color: rgb(153, 102, 204);
 }
 
 button#sign-up {
   background-color: transparent;
-  color: #0583D2;
+  color: #a78bfa; 
   border: none;
   margin-top: 10%;
 }
 
 button#sign-up:hover {
   text-decoration: underline;
+  color: #c3a6ff; 
 }
 
 .login-container {
-  background-color: white;
+  background-color: #1e1e1e; 
   padding: 5%;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 255);
   width: 40vw;
   max-width: 400px;
-  margin: 15vh auto;
-  border-radius: 10px;
+  margin: 10vh auto;
+  border-radius: 15px;
 }
 
 #create-acct {
@@ -105,5 +120,5 @@ button#sign-up:hover {
 }
 
 #return-btn:hover {
-  color: #0583D2;
+  color: #a78bfa; /* Purple-blue hover */
 }
