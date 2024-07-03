@@ -75,7 +75,7 @@ button {
 }
 
 button#submit, button#create-acct-btn, button#google-sign-in {
-  background-color: rgb(102, 51, 153); /* Purple-blue */
+  background-color: rgb(102, 51, 153); 
   color: white;
   margin-top: 5%;
 }
@@ -98,12 +98,13 @@ button#sign-up:hover {
 
 .login-container {
   background-color: #1e1e1e; 
-  padding: 5%;
+  padding: 3%;
   box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 255);
-  width: 40vw;
-  max-width: 400px;
+  width: 45vw;
+  max-width: 420px;
   margin: 10vh auto;
   border-radius: 15px;
+  height: 650px;
 }
 
 #create-acct {
@@ -121,4 +122,22 @@ button#sign-up:hover {
 
 #return-btn:hover {
   color: #a78bfa; /* Purple-blue hover */
+}
+.product-logo {
+  display:flex;
+  margin:  0 auto 16px auto;
+  width: 80px;
+}
+
+button#google-sign-in {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: fit-content;
+}
+
+.google-logo {
+  width: 30px; 
+  height: 30px;
+  margin-right: 10px;
 }
