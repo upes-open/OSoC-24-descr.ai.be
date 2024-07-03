@@ -1,33 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Signup Page</title>
     <link rel="stylesheet" href="./style2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <div class="signup-container">
-        <h2>Signup</h2>
-        <form id="signup-form">
-            <div class="form-group">
-                <label for="username">Username</label>
-                <input type="text" id="username" name="username" required>
+        <form class="signup-form">
+            <h2>Create Account</h2>
+            <div class="input-group">
+                <label for="username"><b>Username</b></label>
+                <input type="text" id="username" name="username" placeholder="username" required>
             </div>
-            <div class="form-group">
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" required>
+            <div class="input-group">
+                <label for="email"><b>Email</b></label>
+                <input type="email" id="email" name="email" placeholder="email" required>
             </div>
-            <div class="form-group">
-                <label for="password">Password</label>
-                <input type="password" id="password" name="password" required>
+            <div class="input-group">
+                <label for="password"><b>Password</b></label>
+                <input type="password" id="password" name="password" placeholder="password" required>
             </div>
-            <div class="form-group">
-                <label for="confirm-password">Confirm Password</label>
-                <input type="password" id="confirm-password" name="confirm-password" required>
-            </div>
-            <button type="submit">Signup</button>
+            <button type="submit" class="btn">Sign Up</button>
         </form>
+        <div class="text">
+            <h7 class="text2"><b>Back to login: <a href="../../popup.html">Login</a></b></h7>
+            <i class="fa-brands fa-google fa-lg" style="color: #ff3c00;"></i>
+        </div>
     </div>
 </body>
+
 </html>

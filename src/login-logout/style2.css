@@ -1,57 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    margin: 0;
 }
 
 .signup-container {
-    background: #fff;
-    padding: 20px;
+    background: url('https://i.pinimg.com/564x/7e/d1/71/7ed17124dc9337a33efd652274d66dda.jpg') no-repeat center center/cover;
+    width: 400px;
+    padding: 30px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 300px;
 }
 
-h2 {
+.signup-form h2 {
     text-align: center;
     margin-bottom: 20px;
+    color: brown;
+    font-size: 2rem;
 }
 
-.form-group {
+.input-group {
     margin-bottom: 15px;
 }
 
-label {
+.input-group label {
     display: block;
     margin-bottom: 5px;
-    font-weight: bold;
+    color: brown;
+    font-size: 1rem;
 }
 
-input[type="text"],
-input[type="email"],
-input[type="password"] {
-    width: 100%;
-    padding: 8px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    box-sizing: border-box;
-}
-
-button {
+.input-group input {
     width: 100%;
     padding: 10px;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
+    border: 1px solid #ccc;
     border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
+    transition: border-color 0.3s;
 }
 
-button:hover {
-    background-color: #45a049;
+.input-group input:focus {
+    border-color: burlywood;
 }
+
+.btn {
+    width: 100%;
+    padding: 10px;
+    background: brown;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+    margin-bottom: 10px;
+}
+
+.btn:hover {
+    border-color: burlywood;
+}
+
+.text{
+    margin-left: 100px;
+}
+
+.text2{
+    margin-right: 10px;
+  }
