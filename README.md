@@ -18,6 +18,7 @@ The Bookmark Context AI Chrome Extension revolutionizes the way users manage and
 5. User Authentication: Securely manage bookmarks with user authentication through Google accounts.
 6. Custom AI Models: Integrate custom AI models for generating summaries and tags.
 
+![Alt](https://repobeats.axiom.co/api/embed/911006b6cd79afe5113f78a87d64e7163b9431c9.svg "Repobeats analytics image")
 
 
 <h2>Technology Stack</h2>
