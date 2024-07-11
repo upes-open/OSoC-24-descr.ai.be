@@ -2,11 +2,30 @@
   "manifest_version": 3,
   "name": "descr.ai.be",
   "version": "1.0.0",
+  "permissions": ["activeTab", "scripting"],
   "description": "Overview The Bookmark Context AI Chrome Extension revolutionizes the way users manage and utilize their bookmarks by adding intelligent context-aware features. This extension enhances the traditional bookmarking experience by providing users with dynamic summaries, keywords, and notes for each bookmark. When a user hovers over a bookmark, the extension displays this contextual information in a tooltip, making it easier to recall and utilize saved resources effectively.",
-  "icons": { "16": "./asset/icon16.png",
-           "48": "./asset/icon48.png",
-          "128": "./asset/icon128.png" },
+  "icons": {
+    "16": "./asset/icon16.png",
+    "48": "./asset/icon48.png",
+    "128": "./asset/icon128.png"
+  },
   "action": {
-    "default_popup": "popup.html"
-  }
+    "default_popup": "sidebar.html"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "css": ["sidebar-style.css"],
+      "js": ["content-script.js"]
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["sidebar.html"],
+      "matches": ["<all_urls>"]
+    }
+  ]
 }
