@@ -1,5 +1,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap");
 
+:root {
+  /* --background: #2e2e2e;
+    --text: #ffffff;
+    --primary: #3498db;
+    --secondary: #4a4a4a;
+    --accent: #5ba4fa; */
+
+  --background: #ffffff;
+  --text: #000000;
+  --primary: #000000;
+  --secondary: #ffffff;
+  --accent: #5ba4fa;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -8,7 +22,7 @@
 
 body {
   font-family: "Inter", sans-serif;
-  background-color: #f5f5f5;
+  background-color: var(--background);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -16,7 +30,7 @@ body {
 }
 
 .container {
-  background-color: white;
+  background-color: var(--background);
   border-radius: 20px;
   padding: 20px;
   width: 300px;
@@ -25,12 +39,13 @@ body {
   flex-direction: column;
   justify-content: space-between;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  color: var(--text);
 }
 
 .search-bar {
   width: 100%;
   padding: 10px;
-  border: 2px solid #3498db;
+  border: 2px solid var(--accent);
   border-radius: 8px;
   font-size: 16px;
   margin-bottom: 20px;
@@ -67,14 +82,15 @@ body {
 
 .bookmark-item.highlighted {
   background-color: #f0f0f0;
+  /* color: var(--secondary); */
   border-radius: 5px;
 }
 
 .add-bookmark-btn {
   width: 100%;
   padding: 12px;
-  background-color: #333;
-  color: white;
+  background-color: var(--primary);
+  color: var(--secondary);
   border: none;
   border-radius: 5px;
   font-size: 16px;

@@ -10,7 +10,7 @@
     "128": "./asset/icon128.png"
   },
   "action": {
-    "default_popup": "sidebar.html"
+    "default_popup": "popup.html"
   },
   "background": {
     "service_worker": "background.js"
@@ -18,13 +18,12 @@
   "content_scripts": [
     {
       "matches": ["<all_urls>"],
-      "css": ["sidebar-style.css"],
       "js": ["content-script.js"]
     }
   ],
   "web_accessible_resources": [
     {
-      "resources": ["sidebar.html"],
+      "resources": ["sidebar.html", "sidebar-style.css", "themes.js"],
       "matches": ["<all_urls>"]
     }
   ]
