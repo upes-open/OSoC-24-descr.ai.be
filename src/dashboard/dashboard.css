@@ -1,0 +1,124 @@
+html{
+    background-color: rgb(235, 233, 233);
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.navbar{
+    background-color: rgba(163, 162, 162, 0.592);
+}
+.header{
+    display: flex;
+    margin-left:70px;
+}
+.header h1{
+    color: black;
+    margin-top: 20px;
+    margin-left: 220px;
+}
+.header h2{
+    color: black;
+    margin-left: 25px;
+    margin-top: 25px;
+}
+
+.header input{
+    width:420px;
+    height: 28px;
+    border-radius: 10px;
+    border:1px solid rgb(0, 0, 0);
+    background-color: rgb(216, 216, 216);
+    margin-left: 200px;
+    margin-top: 20px;
+    padding: 2px;
+}
+
+input::placeholder{
+    padding-left: 20px;
+}
+
+.userProfile img{
+margin-left: 20px;
+margin-top: 14px;
+width: 50px;
+height: 44px;
+border-radius: 50%;
+}
+
+.revisit{
+    color: black;
+    margin-top: 80px;
+    font-size: 32px;
+    margin-left:555px;
+}
+
+.divider{
+    width: 300px;
+    margin-left: 580px;
+    margin-top:10px;
+    opacity: 1;
+}
+
+.previousBookmarks{
+    margin-left: 90px;
+    margin-top:60px;
+    display: flex;
+    flex-wrap:wrap;
+    flex-direction: row;
+}
+
+.bookmark{
+    margin-top:50px;
+    margin-left: 50px;
+    width:250px;
+    height: 300px;
+    background-color: rgb(216, 216, 216);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 20px;
+}
+
+.imgWeb{
+    background-color: rgb(125, 125, 125);
+    width: 250px;
+    height: 150px;
+    border-radius: 20px;
+}
+
+.bookmarkSummary{
+    width: 200px;
+    height: 80px;
+    overflow: hidden;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.bookmarkSummary p {
+    color: black;
+    width: 200px;
+    height: 20px;
+    font-size: 15px;
+    padding: 10px;
+
+}
+
+.linkWebsite{
+    margin-left: 22px;
+}
+
+/* footer */
+.reference{
+    margin-top: 100%;
+    display: flex;
+    background-color: rgb(163, 162, 162);
+}
+
+.refbox{
+    margin-left:60px;
+}
+
+.refbox ul,.box ul{
+    list-style-type: none;
+}
+
+.top{
+    display: flex;
+}
+
