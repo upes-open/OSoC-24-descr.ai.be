@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap");
+
+:root {
+  /* --background: #2e2e2e;
+    --text: #ffffff;
+    --primary: #3498db;
+    --secondary: #4a4a4a;
+    --accent: #5ba4fa; */
+
+  --background: #ffffff;
+  --text: #000000;
+  --primary: #000000;
+  --secondary: #ffffff;
+  --accent: #5ba4fa;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: var(--background);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  background-color: var(--background);
+  border-radius: 20px;
+  padding: 20px;
+  width: 300px;
+  height: 450px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  color: var(--text);
+}
+
+.search-bar {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid var(--accent);
+  border-radius: 8px;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.bookmarks-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.bookmarks-header h2 {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.view-all {
+  color: #3498db;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.bookmark-list {
+  list-style-type: none;
+  margin-bottom: 20px;
+}
+
+.bookmark-item {
+  padding: 10px;
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+
+.bookmark-item.highlighted {
+  background-color: #f0f0f0;
+  /* color: var(--secondary); */
+  border-radius: 5px;
+}
+
+.add-bookmark-btn {
+  width: 100%;
+  padding: 12px;
+  background-color: var(--primary);
+  color: var(--secondary);
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.add-bookmark-btn:hover {
+  background-color: #555;
+}
