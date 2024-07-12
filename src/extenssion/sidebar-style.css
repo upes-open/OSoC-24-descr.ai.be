@@ -1,0 +1,133 @@
+:root {
+  /* --background: #2e2e2e;
+      --text: #ffffff;
+      --primary: #3498db;
+      --secondary: #4a4a4a;
+      --accent: #5ba4fa; */
+
+  --background: #ffffff;
+  --text: #000000;
+  --primary: #000000;
+  --secondary: #ffffff;
+  --accent: #5ba4fa;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: var(--background);
+  color: var(--text);
+}
+
+.sidebar-container {
+  padding: 16px;
+}
+
+.site-header {
+  padding: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+  background: var(--primary);
+  color: var(--secondary);
+}
+
+.site-name {
+  font-weight: bold;
+}
+
+.external-link-btn-nav {
+  background: none;
+  border: none;
+  color: var(--secondary);
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.external-link-btn {
+  background: none;
+  border: none;
+  color: var(--text);
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.search-container {
+  margin-bottom: 16px;
+}
+
+.search-input {
+  width: 400px;
+  padding: 12px;
+  border: 1px solid;
+  border-radius: 4px;
+  background-color: white;
+  color: var(--secondary);
+  border-color: var(--primary);
+}
+
+.section {
+  margin-bottom: 24px;
+}
+
+h2 {
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+.summary-text {
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 8px;
+}
+
+.image-placeholder {
+  background-color: #4a4a4a;
+  aspect-ratio: 1;
+  border-radius: 4px;
+}
+
+.links-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.links-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.links-list a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.close-btn {
+  background: none;
+  border: none;
+  color: var(--secondary);
+  font-size: 24px;
+  cursor: pointer;
+  padding: 0;
+  margin-left: 10px;
+}
+
+.site-header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.site-name {
+  flex-grow: 1;
+}
