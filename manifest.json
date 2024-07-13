@@ -18,17 +18,28 @@
 >>>>>>> dda64f0 (added context menu)
   "background": {
     "service_worker": "src/extenssion/context_menu/background.js"
+<<<<<<< HEAD
   },
   "icons": { "16": "./asset/icon16.png",
            "48": "./asset/icon48.png",
           "128": "./asset/icon128.png" },
   "action": {
     "default_popup": "src/extenssion/popup.html"
+=======
+>>>>>>> 2f313ca (changed folder structure)
   },
   "content_scripts": [
     {
       "matches": ["<all_urls>"],
+<<<<<<< HEAD
       "js": ["src/extenssion/context_menu/context.js"]
+=======
+<<<<<<< HEAD
+      "js": ["content-script.js"]
+=======
+      "js": ["src/extenssion/context_menu/context.js"]
+>>>>>>> 8a503ad (changed folder structure)
+>>>>>>> 2f313ca (changed folder structure)
     }
   ],
   "web_accessible_resources": [
