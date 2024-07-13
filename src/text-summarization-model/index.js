@@ -57,15 +57,3 @@ const generateSummary = async (text, images) => {
   //   console.log(summary);
   return summary;
 };
-
-//
-// const summary = generateSummary(" ", ["image.png"]);
-const summary =
-  '```json { "short": "Scientists have discovered a new species of orangutans in Sumatra, Indonesia, called the Tapanuli orangutan, which is considered the most endangered of all great apes.","long": "Scientists have discovered a new species of orangutans in the Batang Toru forest of North Sumatra, Indonesia.  The Tapanuli orangutan is distinct from the other two species of orangutans found in Sumatra and Borneo due to genetic, skeletal, and tooth differences.  With fewer than 800 individuals, the Tapanuli orangutan is considered the most endangered great ape species.  The population is highly vulnerable due to habitat destruction from development and faces an immediate threat of extinction within our lifetime.  The research began in 2013 when an injured orangutan was found in the area, leading to the examination of its skull and subsequent discovery of the new species." } ```';
-parseCustomJson(summary)
-  .then((data) => {
-    console.log(data);
-  })
-  .catch((err) => {
-    console.log(err);
-  });
