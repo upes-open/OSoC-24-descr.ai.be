@@ -1,19 +1,6 @@
-import { GoogleGenerativeAI } from "@google/generative-ai";
-import "dotenv/config";
-import { readFileSync } from "fs";
+import { GoogleGenerativeAI } from "https://esm.run/@google/generative-ai";
 
-// Access your API key as an environment variable
-const genAI = new GoogleGenerativeAI(process.env.API_KEY);
-
-// Converts local file information to a GoogleGenerativeAI.Part object.
-function fileToGenerativePart(path, mimeType) {
-  return {
-    inlineData: {
-      data: Buffer.from(readFileSync(path)).toString("base64"),
-      mimeType,
-    },
-  };
-}
+const genAI = new GoogleGenerativeAI("");
 
 const parseCustomJson = async (text) => {
   try {
@@ -34,7 +21,7 @@ const parseCustomJson = async (text) => {
   }
 };
 
-const generateSummary = async (text, images) => {
+const generateSummary = async (text) => {
   if (text === undefined || text === "") return;
 
   const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
@@ -44,12 +31,6 @@ const generateSummary = async (text, images) => {
 
   let imageParts = [];
 
-  if (images !== undefined) {
-    for (let image of images) {
-      imageParts.push(fileToGenerativePart(image, "image/png"));
-    }
-  }
-
   const input = prompt + text;
   const result = await model.generateContent([input, ...imageParts]);
   const response = result.response;
@@ -57,3 +38,5 @@ const generateSummary = async (text, images) => {
   //   console.log(summary);
   return summary;
 };
+
+export { generateSummary, parseCustomJson };
