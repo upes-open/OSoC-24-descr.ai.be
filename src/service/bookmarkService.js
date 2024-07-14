@@ -1,6 +1,6 @@
 // bookmarkService.js
-const { db } = require("../firebaseConfig");
-const {
+import { db } from "../firebaseConfig.js";
+import {
   collection,
   addDoc,
   getDoc,
@@ -10,7 +10,7 @@ const {
   doc,
   query,
   where,
-} = require("firebase/firestore");
+} from "https://www.gstatic.com/firebasejs/9.22.1/firebase-firestore.js";
 
 const COLLECTION_NAME = "bookmarks";
 
@@ -94,7 +94,7 @@ async function deleteBookmark(userId, bookmarkId) {
   }
 }
 
-module.exports = {
+export {
   addBookmark,
   getBookmark,
   getUserBookmarks,

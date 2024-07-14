@@ -11,8 +11,8 @@ async function exampleUsage() {
 
   try {
     const newBookmarkId = await addBookmark(userId, {
-      url: "https://example.com",
-      title: "Example Bookmark",
+      url: "https://exampl2.com",
+      title: "Example Bookmark 2",
       summary: "This is an example bookmark",
       keywords: ["example", "bookmark"],
       notes: "Some additional notes",
@@ -28,13 +28,13 @@ async function exampleUsage() {
     console.log("User bookmarks:", userBookmarks);
 
     // Update the bookmark for the user
-    await updateBookmark(userId, newBookmarkId, {
-      title: "Updated Example Bookmark",
-    });
+    // await updateBookmark(userId, newBookmarkId, {
+    //   title: "Updated Example Bookmark",
+    // });
     console.log("Bookmark updated");
 
     // Delete the bookmark for the user
-    await deleteBookmark(userId, newBookmarkId);
+    // await deleteBookmark(userId, newBookmarkId);
     console.log("Bookmark deleted");
   } catch (error) {
     console.error("Error:", error);

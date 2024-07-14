@@ -10,20 +10,17 @@
     <div class="container">
       <div>
         <input type="text" class="search-bar" placeholder="Search" />
-
         <div class="bookmarks-header">
-          <h2>Favorite Bookmarks</h2>
+          <h2>Latest Bookmarks</h2>
           <a href="#" class="view-all">View all</a>
         </div>
-
-        <ul class="bookmark-list">
-          <li class="bookmark-item highlighted">google.com</li>
-          <li class="bookmark-item">somerandom.com</li>
-          <li class="bookmark-item">ismypconline.com</li>
+        <ul class="bookmark-list" id="latest-bookmarks">
+          <!-- Latest bookmarks will be dynamically inserted here -->
         </ul>
       </div>
-
       <button class="add-bookmark-btn">Add Bookmark</button>
     </div>
+
+    <script type="module" src="bookmarks.js"></script>
   </body>
 </html>
