@@ -9,6 +9,8 @@ let bookmarkManager;
 
 async function fetchLatestBookmarks() {
   try {
+    const tags = await bookmarkManager.getTagCount();
+    console.log(tags);
     const allBookmarks = await bookmarkManager.getAllBookmarks();
     const sortedBookmarks = allBookmarks.sort(
       (a, b) => b.timestamp - a.timestamp

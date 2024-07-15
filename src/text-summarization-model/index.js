@@ -1,6 +1,6 @@
 import { GoogleGenerativeAI } from "https://esm.run/@google/generative-ai";
 
-const genAI = new GoogleGenerativeAI("AIzaSyAGGFFsi64yOm93TypJeZrweUo23gCKw2M");
+const genAI = new GoogleGenerativeAI("");
 
 const parseCustomJson = async (text) => {
   try {
