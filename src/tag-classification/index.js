@@ -1,6 +1,6 @@
 import { GoogleGenerativeAI } from "https://esm.run/@google/generative-ai";
 
-const genAI = new GoogleGenerativeAI("AIzaSyAGGFFsi64yOm93TypJeZrweUo23gCKw2M");
+const genAI = new GoogleGenerativeAI("");
 
 async function generateTags(url, title, summary, notes) {
   const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });

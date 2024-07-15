@@ -5,6 +5,20 @@ import {
   updateBookmark,
   deleteBookmark,
 } from "../service/bookmarkService.js";
+import {
+  collection,
+  addDoc,
+  getDoc,
+  getDocs,
+  updateDoc,
+  deleteDoc,
+  doc,
+  query,
+  where,
+} from "https://www.gstatic.com/firebasejs/9.22.1/firebase-firestore.js";
+import { db } from "../firebaseConfig.js";
+
+const COLLECTION_NAME = "bookmarks";
 
 class BookmarkManager {
   constructor(userId) {
@@ -60,6 +74,61 @@ class BookmarkManager {
       console.log("Bookmark deleted");
     } catch (error) {
       console.error("Error deleting bookmark:", error);
+      throw error;
+    }
+  }
+
+  async getAllTags() {
+    try {
+      const q = query(
+        collection(db, COLLECTION_NAME),
+        where("userId", "==", this.userId)
+      );
+      const querySnapshot = await getDocs(q);
+
+      // Use a Set to store unique tags
+      const tagSet = new Set();
+
+      querySnapshot.forEach((doc) => {
+        const bookmark = doc.data();
+        if (bookmark.keywords && Array.isArray(bookmark.keywords)) {
+          bookmark.keywords.forEach((tag) => tagSet.add(tag));
+        }
+      });
+
+      // Convert Set to Array and sort alphabetically
+      const allTags = Array.from(tagSet).sort((a, b) => a.localeCompare(b));
+
+      return allTags;
+    } catch (error) {
+      console.error("Error fetching all tags:", error);
+      throw error;
+    }
+  }
+
+  async getTagCount() {
+    try {
+      const allTags = await this.getAllTags();
+      const tagCount = {};
+
+      const q = query(
+        collection(db, COLLECTION_NAME),
+        where("userId", "==", this.userId)
+      );
+      const querySnapshot = await getDocs(q);
+
+      querySnapshot.forEach((doc) => {
+        const bookmark = doc.data();
+        if (bookmark.keywords && Array.isArray(bookmark.keywords)) {
+          bookmark.keywords.forEach((tag) => {
+            tagCount[tag] = (tagCount[tag] || 0) + 1;
+          });
+        }
+      });
+
+      return allTags.map((tag) => ({ tag, count: tagCount[tag] || 0 }));
+    } catch (error) {
+      console.error("Error getting tag count:", error);
       throw error;
     }
   }
